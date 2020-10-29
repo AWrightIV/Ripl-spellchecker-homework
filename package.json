@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AWrightIV/Ripl-spellchecker-homework/issues"
   },
-  "homepage": "https://github.com/AWrightIV/Ripl-spellchecker-homework#readme"
+  "homepage": "https://github.com/AWrightIV/Ripl-spellchecker-homework#readme",
+  "dependencies": {
+    "typescript": "4.0.5"
+  }
 }
