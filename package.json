@@ -16,6 +16,11 @@
     "url": "https://github.com/AWrightIV/Ripl-spellchecker-homework/issues"
   },
   "homepage": "https://github.com/AWrightIV/Ripl-spellchecker-homework#readme",
+  "engineStrict": false,
+  "engines": {
+    "node": ">=7.0.6",
+    "npm": ">=15.0.1"
+  },
   "dependencies": {
     "typescript": "4.0.5"
   }
