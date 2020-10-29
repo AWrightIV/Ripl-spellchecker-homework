@@ -1,0 +1,19 @@
+{
+  "name": "ripl-homework-spellchecker-awrightiv",
+  "version": "1.0.0",
+  "description": "Corrects bad casing and invalid repeating character errors on the incoming word and then returns the corrected word.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AWrightIV/Ripl-spellchecker-homework.git"
+  },
+  "author": "Allan Wright IV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AWrightIV/Ripl-spellchecker-homework/issues"
+  },
+  "homepage": "https://github.com/AWrightIV/Ripl-spellchecker-homework#readme"
+}
