@@ -12,9 +12,7 @@ module.exports = {
     // Allows for the use of imports
     sourceType: "module",
   },
-  plugins: [
-    "@typescript-eslint",
-  ],
+  plugins: ["@typescript-eslint"],
   extends: [
     "eslint:recommended",
     // Uses the recommended rules from the @typescript-eslint/eslint-plugin
@@ -25,12 +23,12 @@ module.exports = {
     "prettier/@typescript-eslint",
     // Enables eslint-plugin-prettier and eslint-config-prettier. This will display prettier errors as ESLint
     // errors. Make sure this is always the last configuration in the extends array.
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
   ],
   rules: {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
-    "semi": ["error", "never"],
-    "quotes": ["error", "double"],
+    semi: ["error", "always"],
+    quotes: ["error", "double"],
   },
-}
+};
