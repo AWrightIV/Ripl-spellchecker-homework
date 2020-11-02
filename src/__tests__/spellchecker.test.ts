@@ -35,7 +35,7 @@ writee`);
     expect(spellCheck.checkWord("rrreally")).toBe("really");
   });
   it("should return the original word if the incoming word is already correct", () => {
-    // valid words with more than two consecutive letters:
+    // Valid words with more than two consecutive letters:
     //  bossship
     //  demigoddessship
     //  goddessship
@@ -44,6 +44,9 @@ writee`);
     //  wallless
     //  whenceeer
     expect(spellCheck.checkWord("bossship")).toBe("bossship");
+    // Multiple valid words that vary in the repetition count of their characters:
+    //  write, writee
+    expect(spellCheck.checkWord("writee")).toBe("writee");
   });
   it("should return 'No Correction Found' if the word is zero length", () => {
     expect(spellCheck.checkWord("")).toBe("No Correction Found");
