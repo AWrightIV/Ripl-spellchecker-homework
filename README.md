@@ -1,3 +1,7 @@
+Spell checking isn't a domain I've dug deep into, so I needed a comprehensive source for what others have tried for various problem sets. The most helpful source I found was a 2012 article from Wolf Garbe of FAROO https://medium.com/@wolfgarbe/1000x-faster-spelling-correction-algorithm-2012-8701fcd87a5f
+
+
+# Original Problem Description
 
 # Ripl Spell-checker
 
