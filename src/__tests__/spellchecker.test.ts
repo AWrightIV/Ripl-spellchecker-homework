@@ -2,14 +2,16 @@ import Lexicon from "../lexicon";
 import SpellChecker from "../spellchecker";
 
 describe("SpellChecker", () => {
-  const lexicon = new Lexicon("Wetumpka\
-Parnassus\
-table\
-really\
-bath\
-Bath\
-Jean-Pierre\
-bossship");
+  const lexicon = new Lexicon(`Wetumpka
+Parnassus
+table
+really
+bath
+Bath
+Jean-Pierre
+bossship
+write
+writee`);
   const spellCheck = new SpellChecker(lexicon);
 
   it("should return the correctly capitalized word for a lowercase proper noun", () => {
