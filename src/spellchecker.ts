@@ -19,20 +19,35 @@ class SpellChecker {
     If the incoming word is not correct and no correction can be found, return “No Correction Found”.
   */
   checkWord(wordToCheck: string): string {
-    // Has the lexicon been defined?
     if (!this._lexicon) {
-      return wordToCheck;
+      return "No valid words. Please initialize.";
     }
 
     if (wordToCheck.length == 0) {
       return "No Correction Found";
     }
 
-    // get dictionary
-    // invalid repeating characters
-    // bad casing
+    const exactMatch = this._lexicon.has(wordToCheck);
+    if (exactMatch) {
+      return wordToCheck;
+    }
 
-    return wordToCheck;
+    const correctSpelling = this._correctSpelling(wordToCheck);
+    if (correctSpelling) {
+      return correctSpelling;
+    }
+
+    return "No Correction Found";
+  }
+
+  private _correctSpelling(wordToCorrect: string): string | undefined {
+    return undefined;
+  }
+
+  private _capitalize(wordToCapitalize: string): Array<string | number> {
+    let capitalized: string;
+    return [capitalized, 0];
   }
 }
+
 export default SpellChecker;
