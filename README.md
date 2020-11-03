@@ -1,6 +1,6 @@
 # Details on my version
 
-This implementation with TypeScript is intended to demonstrate adherence to SOLID principles, readability, and 100% test coverage. It corrects all the cases listed and all permutations of them. The entire time I was developing, I relied on jest to determine whether my code met the requirements. To see my code running the way that I did, run "npm run test" or "yarn test."
+This implementation with TypeScript is intended to demonstrate adherence to SOLID principles, readability, and 100% test coverage. It corrects all the cases listed and all permutations of them. The entire time I was developing, I relied on jest to determine whether my code met the requirements. To see my code running the way that I did, setup with "npm install" and run "npm run test" or "yarn test."
 
 # Original Problem Description
 
