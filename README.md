@@ -1,5 +1,6 @@
-Spell checking isn't a domain I've dug deep into, so I needed a comprehensive source for what others have tried for various problem sets. The most helpful source I found was a 2012 article from Wolf Garbe of FAROO https://medium.com/@wolfgarbe/1000x-faster-spelling-correction-algorithm-2012-8701fcd87a5f
+# Details on my version
 
+This implementation with TypeScript is intended to demonstrate adherence to SOLID principles, readability, and 100% test coverage. It corrects all the cases listed and all permutations of them. The entire time I was developing, I relied on jest to determine whether my code met the requirements. To see my code running the way that I did, run "npm run test" or "yarn test."
 
 # Original Problem Description
 
