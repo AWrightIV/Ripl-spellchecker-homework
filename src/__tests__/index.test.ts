@@ -1,9 +1,6 @@
-import { sum } from "..";
+import { spellcheckDemoAsync } from "../index";
 
-test("undefinedSum", () => {
-  expect(sum()).toBe(0);
-});
-
-test("integerSum", () => {
-  expect(sum(1, 2)).toBe(3);
+test("spellcheckDemoAsync", async () => {
+  await expect(spellcheckDemoAsync("paRNAssus")).resolves.toBe("Parnassus");
+  await expect(spellcheckDemoAsync("pariss")).resolves.toBe("Paris");
 });
