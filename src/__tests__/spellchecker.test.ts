@@ -12,6 +12,7 @@ Jean-Pierre
 bossship
 write
 writee`);
+
   const spellCheck = new SpellChecker(lexicon);
 
   it("should return the correctly capitalized word for a lowercase proper noun", () => {
@@ -34,8 +35,12 @@ writee`);
     expect(spellCheck.checkWord("tabble")).toBe("table");
     expect(spellCheck.checkWord("rrreally")).toBe("really");
   });
+  it("should return a corrected word when characters have been repeated too many times and capitalization is invalid", () => {
+    expect(spellCheck.checkWord("Taaabllle")).toBe("table");
+    expect(spellCheck.checkWord("jeean-pierrre")).toBe("Jean-Pierre");
+  });
   it("should return the original word if the incoming word is already correct", () => {
-    // Valid words with more than two consecutive letters:
+    // Valid words with three or more consecutive identical letters:
     //  bossship
     //  demigoddessship
     //  goddessship
