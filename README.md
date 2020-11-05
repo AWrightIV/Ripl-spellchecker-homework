@@ -4,9 +4,9 @@ This implementation with TypeScript is intended to demonstrate adherence to SOLI
 
 # Original Problem Description
 
-# Ripl Spell-checker
+## Spell-checker
 
-To complete the new Ripl spell-checking software, we need you to create its brain. The requirements for this version are listed below. If you have any questions about any part of the task, please let us know.
+To complete the new spell-checking software, we need you to create its brain. The requirements for this version are listed below. If you have any questions about any part of the task, please let us know.
 
 ### Requirements
 
@@ -26,9 +26,3 @@ The function should behave as follows:
 * If the incoming word is not correct and no correction can be found, the function should return the string “No Correction Found”.
 
 The list of correct word spellings are in the dictionary file that is in this repo. (Uncompress the file before using it.) You don't need to perform corrections on any words not in this dictionary.
-
-If you have any questions, please let us know.
-
-### Packaging and Delivery
-
-Please send the source code in a ZIP file, or similar format. If you use any libraries, please ensure we can get the exact versions you used. Please tell us anything that you think we should know about compiling or using your code.
